@@ -8,7 +8,7 @@ from PIL import Image
 
 
 #loading the saved model
-loaded_model = pickle.load(open(r"C:\Users\HP\Desktop\GOMYCODE\Churn_model.sav", 'rb'))
+loaded_model = pickle.load(open("Churn_model.sav", 'rb'))
 
 
 #creating a function for prediction
@@ -31,7 +31,7 @@ def Customer_churn(input_data):
 
 def main():
     # display image
-    img = Image.open(r"C:\Users\HP\Desktop\GOMYCODE\Customer_Churn_Prediction_img.png")
+    img = Image.open("Customer_Churn_Prediction_img.png")
     new_image = img.resize((700, 200))
     st.image(new_image)
     # let's display
